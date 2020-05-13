@@ -23,6 +23,7 @@ use Eightshift_Libs\Blocks as Lib_Blocks;
 use Whatever\Admin;
 use Whatever\Menu;
 use Whatever\Media;
+use Whatever\Custom_Post_Type;
 
 /**
  * The main start class.
@@ -77,6 +78,9 @@ class Main extends Lib_Core {
 
       // Blocks.
       Lib_Blocks\Blocks::class => [ Config::class ],
+
+      // Custom Post Type.
+      Custom_Post_Type\Projects::class,
     ];
   }
 }

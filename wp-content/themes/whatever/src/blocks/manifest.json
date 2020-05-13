@@ -1,10 +1,10 @@
 {
   "namespace": "whatever",
-  "background": "#900000",
+  "background": "#7E2C2C",
   "globalVariables": {
     "maxCols": 12,
     "containers": {
-      "default": "1330px"
+      "default": "1180px"
     },
     "gutters": {
       "default": "25px",
@@ -19,12 +19,32 @@
       {
         "name": "Primary",
         "slug": "primary",
-        "color": "#C3151B"
+        "color": "#7E2C2C"
       },
       {
-        "name": "Black",
-        "slug": "black",
-        "color": "#000000"
+        "name": "Mina",
+        "slug": "mina",
+        "color": "#333333"
+      },
+      {
+        "name": "Chalice",
+        "slug": "chalice",
+        "color": "#9F9F9F"
+      },
+      {
+        "name": "Mercury",
+        "slug": "mercury",
+        "color": "#E5E5E5"
+      },
+      {
+        "name": "Stack",
+        "slug": "stack",
+        "color": "#848484"
+      },
+      {
+        "name": "Alto",
+        "slug": "alto",
+        "color": "#D0D0D0"
       },
       {
         "name": "White",

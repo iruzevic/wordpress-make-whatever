@@ -5,8 +5,9 @@ import { ColorPaletteCustom } from '@eightshift/frontend-libs/scripts/components
 import { SelectControl, Icon } from '@wordpress/components';
 
 export const headingSizes = [
-  { label: __('Default (115px)', 'whatever'), value: 'default' },
-  { label: __('Big (90px)', 'whatever'), value: 'big' },
+  { label: __('Default (48px)', 'whatever'), value: 'default' },
+  { label: __('Big (70px)', 'whatever'), value: 'big' },
+  { label: __('huge (100px)', 'whatever'), value: 'huge' },
 ];
 
 export const HeadingOptions = (props) => {

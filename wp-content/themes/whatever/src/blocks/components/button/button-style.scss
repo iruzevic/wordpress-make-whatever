@@ -6,44 +6,20 @@ $btn: (
         color: global-settings(colors, white),
       ),
       hover: (
-        background-color: global-settings(colors, black),
-      ),
-    ),
-    black: (
-      normal: (
-        background-color: global-settings(colors, black),
-        color: global-settings(colors, white),
-      ),
-      hover: (
-        background-color: global-settings(colors, primary),
+        background-color: global-settings(colors, mina),
       ),
     ),
   ),
   sizes: (
     mobile: (
       default: (
-        font-size: 16px,
-        line-height: 1.4,
-        height: 56px,
-      ),
-      big: (
-        font-size: 18px,
-        line-height: 1.4,
-        height: 80px,
+        font-size: 14px,
+        line-height: 1,
+        height: 41px,
+        text-transform: uppercase,
+        margin-top: 20px,
       ),
     ),
-    tablet: (
-      default: (
-        font-size: 18px,
-        line-height: 1.4,
-        height: 70px,
-      ),
-      big: (
-        font-size: 20px,
-        line-height: 1.4,
-        height: 100px,
-      )
-    )
   )
 );
 
@@ -54,11 +30,11 @@ $btn: (
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 12px 50px;
+  padding: 10px 35px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 0;
   transition: {
     property: background-color, color, border-color;
     timing-function: ease-in;

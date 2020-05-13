@@ -5,6 +5,7 @@ $core-map: (
   color: $base-text-color,
   background-color: $base-background-color,
   font-size: $base-font-size,
+  font-weight: 300,
 );
 
 *,
@@ -20,6 +21,7 @@ html {
 body {
   @include font-smoothing;
   font-family: map-get-strict($core-map, font-family);
+  font-weight: map-get-strict($core-map, font-weight);
   color: map-get-strict($core-map, color);
   background-color: map-get-strict($core-map, background-color);
   position: relative;

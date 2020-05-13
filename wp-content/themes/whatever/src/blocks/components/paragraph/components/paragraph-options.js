@@ -5,8 +5,7 @@ import { ColorPaletteCustom } from '@eightshift/frontend-libs/scripts/components
 import { SelectControl, Icon } from '@wordpress/components';
 
 export const paragraphSizes = [
-  { label: __('Default (22px)', 'whatever'), value: 'default' },
-  { label: __('Small (18px)', 'whatever'), value: 'small' },
+  { label: __('Default (18px)', 'whatever'), value: 'default' },
 ];
 
 export const ParagraphOptions = (props) => {

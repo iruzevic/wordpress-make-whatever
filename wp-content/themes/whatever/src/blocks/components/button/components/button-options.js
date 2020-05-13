@@ -19,12 +19,10 @@ export const buttonSizeWidths = [
 export const buttonColors = () => {
   const {
     primary,
-    black,
   } = getPaletteColors();
 
   return [
     primary,
-    black,
   ];
 };
 

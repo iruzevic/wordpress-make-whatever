@@ -9,12 +9,10 @@ import { getPaletteColors } from '@eightshift/frontend-libs/scripts/editor';
 export const linkColors = () => {
   const {
     primary,
-    black,
   } = getPaletteColors();
 
   return [
     primary,
-    black,
   ];
 };
 

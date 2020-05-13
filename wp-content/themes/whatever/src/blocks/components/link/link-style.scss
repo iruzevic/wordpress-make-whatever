@@ -5,15 +5,7 @@ $link: (
         color: global-settings(colors, primary),
       ),
       hover: (
-        color: global-settings(colors, black),
-      ),
-    ),
-    black: (
-      normal: (
-        color: global-settings(colors, black),
-      ),
-      hover: (
-        color: global-settings(colors, primary),
+        color: global-settings(colors, mina),
       ),
     ),
   ),

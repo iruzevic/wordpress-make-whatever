@@ -1,0 +1,115 @@
+$block-jumbotron: (
+  intro: (
+    mobile: (
+      font-size: 24px,
+      line-height: 1,
+      font-weight: 300,
+      color: global-settings(colors, white),
+      margin-bottom: 5px,
+      text-transform: uppercase,
+    ),
+  ),
+  heading: (
+    mobile: (
+      font-size: 100px,
+      line-height: 0.95,
+      font-weight: 900,
+      color: global-settings(colors, white),
+      text-transform: uppercase,
+    ),
+  ),
+  paragraph: (
+    mobile: (
+      font-size: 20px,
+      line-height: 1.33,
+      margin-top: 25px,
+      color: global-settings(colors, white),
+    ),
+  ),
+  container-size: map-get-deep($base-container-sizes, default),
+  container-spacing: map-get-deep($base-gutter-sizes, default),
+);
+
+.block-jumbotron {
+  position: relative;
+  min-height: 600px;
+
+  &__content {
+    padding-left: map-get-strict($block-jumbotron, container-spacing);
+    padding-right: map-get-strict($block-jumbotron, container-spacing);
+    margin: 0 auto;
+    max-width: map-get-strict($block-jumbotron, container-size);
+
+    @include media(desktop up) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+    }
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+
+    &--vertical-center {
+      align-items: center;
+    }
+
+    &--vertical-bottom {
+      align-items: flex-end;
+    }
+
+    &--horizontal-center {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &--horizontal-right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__content-wrap {
+    width: 100%;
+    max-width: calc-grid-width(6);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__intro {
+    @include responsive($block-jumbotron, intro);
+  }
+
+  &__heading {
+    @include responsive($block-jumbotron, heading);
+  }
+
+  &__paragraph {
+    @include responsive($block-jumbotron, paragraph);
+  }
+
+  &__media {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &--horizontal-left {
+      align-items: flex-start;
+    }
+
+    &--horizontal-right {
+      align-items: flex-end;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

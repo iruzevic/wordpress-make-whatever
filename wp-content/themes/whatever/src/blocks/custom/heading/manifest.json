@@ -16,7 +16,7 @@
       "content": "Heading Content",
       "level": 2,
       "styleAlign": "left",
-      "styleColor": "primary",
+      "styleColor": "mina",
       "styleSize": "default"
     }
   },
@@ -27,7 +27,7 @@
         "content": "",
         "level": 2,
         "styleAlign": "left",
-        "styleColor": "primary",
+        "styleColor": "mina",
         "styleSize": "default"
       },
       "items": {
