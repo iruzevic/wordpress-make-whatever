@@ -1,0 +1,2 @@
+/wp-content/themes/whatever/node_modules
+.git

@@ -1,0 +1,51 @@
+{
+  "name": "eightshift/whatever",
+  "version": "4.2.1",
+  "description": "This repository contains all the tools you need to start building a modern WordPress project.",
+  "keywords": [
+    "composer",
+    "installer",
+    "plugin",
+    "blocks",
+    "Gutenberg",
+    "WordPress"
+  ],
+  "homepage": "https://eightshift.com/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eightshift team",
+      "email": "team@eightshift.com",
+      "homepage": "https://eightshift.com/",
+      "role": "Developer / IT Manager"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/infinum/whatever/issues",
+    "source": "https://github.com/infinum/whatever"
+  },
+  "require-dev": {
+    "infinum/coding-standards-wp": "0.4.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5"
+  },
+  "require": {
+    "php": ">=7.1",
+    "infinum/eightshift-libs": "^2.2.1"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "process-timeout": 2000
+  },
+  "scripts": {
+    "check-cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 7.1-",
+    "fix-cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --runtime-set testVersion 7.1-"
+  }
+}

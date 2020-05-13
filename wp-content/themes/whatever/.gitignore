@@ -1,0 +1,5 @@
+# Project Specific
+/public
+/vendor
+/node_modules
+/storybook

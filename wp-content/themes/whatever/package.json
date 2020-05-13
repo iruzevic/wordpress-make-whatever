@@ -1,0 +1,48 @@
+{
+  "name": "@eightshift/whatever",
+  "version": "4.2.1",
+  "description": "This repository contains all the tools you need to start building a modern WordPress project.",
+  "authors": [
+    {
+      "name": "Eightshift team",
+      "email": "team@eightshift.com",
+      "homepage": "https://eightshift.com/",
+      "role": "Developer / IT Manager"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinum/whatever.git"
+  },
+  "bugs": {
+    "url": "https://github.com/infinum/whatever/issues"
+  },
+  "homepage": "https://github.com/infinum/whatever#readme",
+  "scripts": {
+    "__eslintTheme": "eslint src/**/*.js",
+    "__stylelintTheme": "stylelint src/**/*.scss",
+    "lintStyle": "npm run __stylelintTheme",
+    "lintJs": "npm run __eslintTheme",
+    "lint": "npm run lintJs && npm run lintStyle && bash ./bin/lintPhp.sh",
+    "precommit": "npm run lint",
+    "start": "webpack --progress --watch --display-error-details --display-reasons --mode development",
+    "build": "webpack --progress --mode production",
+    "blocksExample": "cp -R ./node_modules/@eightshift/frontend-libs/blocks/init/src/blocks/custom/example ./src/blocks/custom/ && composer dump-autoload",
+    "storybookBuild": "build-storybook -s public -o storybook",
+    "storybook": "start-storybook -s public"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@eightshift/frontend-libs": "^3.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
